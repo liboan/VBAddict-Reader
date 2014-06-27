@@ -72,6 +72,18 @@ function average(battles) {
 	return Math.round(sum/battles.length);
 }
 
+//splice out erroneous VBAddict entries (wn8 score of 0)
+
+for (var i = 0; i < battles.length; i++) {
+	if (battles[i].wn8 == 0) {
+		var splice = 1;
+		for (splice = 1; battles[i + splice].wn8 == 0; splice++) {
+			console.log("splicing " + splice);
+		}
+		battles.splice(i,splice);
+	}
+} 
+
 
 
 var CONST_WN8_SPLIT = [0,300,600,900,1250,1600,1900,2350,2900];
@@ -177,7 +189,7 @@ function setup() {
 
 	//feed all the graphs
 	distributeScores(battles);
-
+	svg50Graph(avg50); //not going to be redone, so don't put it in distributeScores()
 }
 
 function distributeScores(battles) {
@@ -368,6 +380,19 @@ function svgHist(data) {
 				});
 
 }	
+
+function svg50Graph(data) {
+	var line = d3.svg.line()
+					.x(function (d) { return d[0]*2;})
+					.y(function (d) { return d[1]/10;})
+					.interpolate("linear");
+	var svgGraph = d3.select("#graph50")
+					.append("path")
+					.attr("d",line(data))
+					.attr("stroke","blue")
+					.attr("stroke-width",2)
+					.attr("fill", "none");
+}
 
 
 function sliderChange() {
