@@ -308,10 +308,7 @@ function svgPie(data) {
 	var max = data[8][0] + data[8][1];
 	var distScale = d3.scale.linear().domain([0, Math.floor(data[8][1] + data[8][0])]).range([0,2*Math.PI]); 
 
-	/*var middle = d3.select("#svgPieWrapper")
-					.append("div")
-					.attr("class","piemiddle")
-					.style("opacity", 1);*/
+	var middle = d3.select(".piemiddle");
 
 	var arc = d3.svg.arc()
 				.innerRadius(50)
