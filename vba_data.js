@@ -1,16 +1,4 @@
 var battles = [ 
-{wn8: 1094, nation: "usa", type: "td", tank: "t49-41"},
-{wn8: 1357, nation: "soviet-union", type: "medium", tank: "a-43-48"},
-{wn8: 2531, nation: "great-britain", type: "heavy", tank: "tog-ii--210"},
-{wn8: 145, nation: "soviet-union", type: "medium", tank: "a-43-48"},
-{wn8: 4667, nation: "france", type: "light", tank: "elc-amx-55"},
-{wn8: 1704, nation: "usa", type: "light", tank: "t21-59"},
-{wn8: 5198, nation: "usa", type: "medium", tank: "m7-21"},
-{wn8: 2036, nation: "usa", type: "medium", tank: "t20-6"},
-{wn8: 1698, nation: "soviet-union", type: "medium", tank: "t-34-85-10"},
-{wn8: 4178, nation: "germany", type: "heavy", tank: "tiger-i-2"},
-{wn8: 2109, nation: "usa", type: "heavy", tank: "t29-15"},
-{wn8: 2713, nation: "france", type: "heavy", tank: "bdr-g1-b-26"},
 {wn8: 2894, nation: "soviet-union", type: "medium", tank: "a-43-48"},
 {wn8: 1664, nation: "germany", type: "medium", tank: "vk-30-02-m--62"},
 {wn8: 1967, nation: "usa", type: "td", tank: "t49-41"},
@@ -492,4 +480,4 @@ var battles = [
 {wn8: 2188, nation: "germany", type: "heavy", tank: "tiger-i-2"},
 {wn8: 7460, nation: "germany", type: "heavy", tank: "tiger-i-2"},
 {wn8: 1544, nation: "germany", type: "heavy", tank: "tiger-i-2"}];
-var date = "Thu Jun 26 15:35:37 EDT 2014";
+var date = "Thu Jun 26 09:40:59 EDT 2014";
